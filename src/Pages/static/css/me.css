@@ -1,0 +1,64 @@
+/*整体背景*/
+body {
+    background: url("../images/bg.png");
+    opacity: 0.9;
+}
+
+.backgroundColor_gray{
+    background-color: rgb(220,220,220)!important;
+}
+
+/* 调整内边距 */
+.m-padding-tb-standard{
+    padding: 10px 0;!important;
+}
+.m-padding-tb-common{
+    padding: 10px;!important;
+}
+/*右上角元素定位*/
+.m-position-top-right{
+    position: absolute;
+    top:20px;
+    right: 10px;
+}
+/*图片 16比9 */
+.m-image-16_9_Parent{
+    position:relative;!important;
+    width: 100%;!important;
+    padding-bottom: 56.25%;!important;
+}
+.m-image-16_9_IMG{
+    position: absolute;!important;
+    top: 0;!important;
+    left: 0;!important;
+    width: 100%;!important;
+    height: 100%;!important;
+    object-fit: fill;!important;
+}
+
+
+
+/* 强制转换成flex布局居中显示 */
+.m-item-middle-aligned{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+/*当设备屏幕宽度小于768px时*/
+@media screen and (max-width: 768px) {
+    .m-mobile-hide{
+        display: none!important;
+    }
+
+}
+
+
+
+/*当设备屏幕宽度大于768px时*/
+@media screen and (min-width: 768px) {
+    .m-desktop-hide{
+        display: none!important;
+    }
+
+}

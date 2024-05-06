@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="static/css/me.css">
+
+    <title>Details</title>
+</head>
+
+<body>
+<!--    导航-->
+<nav class="ui  segment backgroundColor_gray" >
+    <div class="ui container" >
+        <div class="ui  secondary menu m-padding-tb-standard stackable" id="toggle-menu">
+            <h1 class="ui teal header" style="margin: 0; margin-bottom: 5px">Blog</h1>
+            <a href="#" class="item m-mobile-hide"><i class="home icon "></i>Index</a>
+            <a href="#" class="item m-mobile-hide"><i class="idea icon "></i>Classification</a>
+            <a href="#" class="item m-mobile-hide"><i class="tags icon "></i>Tag</a>
+            <a href="#" class="item m-mobile-hide"><i class="info icon "></i>AboutUs</a>
+            <div class="right item m-mobile-hide">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="ui  button icon m-position-top-right m-desktop-hide" id="navbar-toggle-button">
+            <i class="sidebar icon"></i>
+        </div>
+    </div>
+</nav>
+
+<!--主体部分-->
+<div>
+    <!--SemanticUI Container 默认宽度为1127px-->
+    <div class="ui container">
+        <div class="ui grid column">
+            <div class="twelve wide column">
+                <!--内容头部发帖人信息-->
+                <div class="ui top attached brown segment backgroundColor_gray" style="padding-left: 20px">
+                    <div class="ui list">
+                        <div class="item">
+                            <img src="https://picsum.photos/200" alt="" class="ui circular image tiny">
+                            <div class="content">
+                                <h2 class="header center middle aligned">Topic of the article
+                                    <label class="ui tag label large">Python</label>
+                                </h2>
+                                <div class="ui divider"></div>
+                                <div class="sub header">Last seen watching <a><b>Arrested Development</b></a> just now.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--正文-->
+
+                <div class="ui attached segment ">
+                    <!--标签栏-->
+
+                    <!--配图-->
+                    <img src="https://picsum.photos/800/450" alt="" sizes="" srcset="" class="ui fluid rounded image">
+                    <!--正文-->
+                    <div class="ui segment basic center aligned">
+                        <h1 class="ui header">Title of the article</h1>
+                    </div>
+                    <!--文章底部-->
+                    <div class="ui segment basic middle center aligned">
+                        <div class="ui blue button ">
+                            <i class="star icon"></i>
+                            收藏
+                        </div>
+
+                        <div class="ui blue button ">
+                            <i class="like icon"></i>
+                            点赞
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui attached segment">
+                    content
+                </div>
+
+                <div class="ui attached positive segment">
+                    content
+                </div>
+            </div>
+            <!--右侧发帖人卡片-->
+            <div class="four wide column ">
+                <div class="ui attached positive segment rounded brown">
+                    <div class="ui vertical link list stackable middle aligned">
+                        <div class="m-item-middle-aligned item">
+                            <img src="https://picsum.photos/200" alt="" class="ui circular image small">
+                        </div>
+                        <div class="m-item-middle-aligned item" style="margin: 5px 0;font-size: 20px">
+                            <div class="content"><a href="#" class="header">Username</a></div>
+                        </div>
+                        <div class="m-item-middle-aligned item" >
+                            <i class="calendar icon"></i>2024-4-26
+                        </div>
+                        <div class="m-item-middle-aligned item" >
+                            <i class="eye icon"></i>114511
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--底部部分-->
+<footer class="ui segment backgroundColor_gray">
+    <div class="ui center aligned container">
+        <div class="ui grid divided stackable">
+
+            <div class="three wide column middle aligned">
+                <img src="https://picsum.photos/150" class="ui rounded images" alt="" style="width: 150px; height: 150px">
+            </div>
+
+            <div class="three wide column middle aligned">
+                <h3 class="ui header">Latest Blog</h3>
+                <div class="ui link list" style="">
+                    <a href="#" class="item">CNN</a>
+                    <a href="#" class="item">Transformer</a>
+                    <a href="#" class="item">ChatGPT</a>
+                </div>
+            </div>
+
+            <div class="three wide column middle aligned">
+                <h3 class="ui header">Latest Blog</h3>
+                <div class="ui link list" >
+                    <a href="#" class="item">CNN</a>
+                    <a href="#" class="item">Transformer</a>
+                    <a href="#" class="item">ChatGPT</a>
+                </div>
+            </div>
+
+            <div class="seven wide column middle aligned">
+                <h3 class="ui header">DarkSouls III</h3>
+                <div class="ui link list " >
+                    <p>
+                        Yes indeed. It is called Lothric, where the transitory lands of the lords of cinder converge.In venturing north the pilgrims discover the truth of the old words.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui section divider"></div>
+        <p>Powered by @ 星际老男孩</p>
+    </div>
+</footer>
+</body>
+<!--cdn方式引入 semantic-ui 和 JQuery -->
+<style>
+    .ui.grid.middle.aligned{
+        padding: 10px;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<script>
+    <!--导航处收齐展开按钮js-->
+    $('#navbar-toggle-button').click(function () {
+        $('#toggle-menu a, #toggle-menu .right').toggleClass('m-mobile-hide')
+
+    })
+</script>
+</html>
